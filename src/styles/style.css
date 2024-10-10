@@ -1,0 +1,119 @@
+:root {
+  /* Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --fontFamily: 'Outfit', sans-serif;
+  --font-300: 300;
+  --font-400: 400;
+  --font-600: 600;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-content: center;
+  background-color: var(--Very-dark-blue-main-BG);
+  font-size: 1.6rem;
+  font-family: var(--fontFamily);
+  padding: 0 24px;
+}
+
+.card {
+  background-color: var(--Very-dark-blue-card-BG);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.card-img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card-body {
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+
+  h1 {
+    color: var(--White);
+    font-size: 2.2rem;
+    font-weight: var(--font-600);
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: var(--Soft-blue);
+    font-size: 1.7rem;
+    line-height: 1.6;
+    font-weight: var(--font-300);
+    margin-bottom: 24px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      gap: 8px;
+      font-size: 1.6rem;
+    }
+
+    div:first-child {
+      span {
+        color: var(--Cyan);
+        font-weight: var(--font-600);
+      }
+    }
+
+    div:last-child {
+      span {
+        color: var(--Soft-blue);
+        font-weight: var(--font-400);
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 32px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+  }
+
+  p {
+    margin-left: 16px;
+    color: var(--Soft-blue);
+    font-weight: var(--font-300);
+
+    span {
+      color: var(--White);
+      font-weight: var(--font-400);
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Soft-blue);
+}
+
+.attribution a {
+  color: var(--Cyan);
+}
